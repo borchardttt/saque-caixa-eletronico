@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="styles.css">
     <title>Caixa Eletrônico</title>
     <style>
+        @media (max-width: 576px) {
+            .caixa {
+                padding: 5rem; 
+                border-radius: 25px; 
+            }
+            .teclado {
+                grid-template-columns: repeat(3, 1fr); /
+            }
+            .btn-teclado {
+                font-size: 16px; 
+            }
+        }
         .teclado {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -32,7 +44,7 @@
 						background-color: rgb(204, 67, 67);
 						color: white;
 						font-weight: bold;
-						/* Define as propriedades de transição e duração */
+
 				}
 
 				.limpar:hover {
@@ -52,7 +64,7 @@
     </style>
 </head>
 <body>
-    <div class="container mt-5 caixa w-50" style="padding:5rem; border-radius: 50px;">
+    <div class="container mt-5 caixa w-100" style="padding:5rem; border-radius: 50px;">
         <div class="card">
             <div class="card-body">
                 <h2 class="card-title text-center">Simulador de Caixa Eletrônico</h2>
